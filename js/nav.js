@@ -6,6 +6,7 @@ function inicio() {
     document.getElementById('our-client').style.display = 'none';
     document.getElementById('our-client2').style.display = 'none';
     document.getElementById('about-us').style.display = 'none';
+    document.getElementById('project-section').style.display = 'none';
     document.getElementById('contact-section').style.display = 'none';
 
   }
@@ -19,6 +20,7 @@ function sobre() {
     document.getElementById('our-client').style.display = 'none';
     document.getElementById('our-client2').style.display = 'none';
     document.getElementById('about-us').style.display = 'none';
+    document.getElementById('project-section').style.display = 'none';
     document.getElementById('contact-section').style.display = 'none';
 
   }
@@ -32,6 +34,7 @@ function servicos() {
     document.getElementById('our-client').style.display = 'none';
     document.getElementById('our-client2').style.display = 'none';
     document.getElementById('about-us').style.display = 'block';
+    document.getElementById('project-section').style.display = 'none';
     document.getElementById('contact-section').style.display = 'none';
 
   }
@@ -45,6 +48,7 @@ function web() {
     document.getElementById('our-client').style.display = 'none';
     document.getElementById('our-client2').style.display = 'block';
     document.getElementById('about-us').style.display = 'none';
+    document.getElementById('project-section').style.display = 'none';
     document.getElementById('contact-section').style.display = 'none';
 
   }
@@ -58,6 +62,7 @@ function design() {
     document.getElementById('our-client').style.display = 'block';
     document.getElementById('our-client2').style.display = 'none';
     document.getElementById('about-us').style.display = 'none';
+    document.getElementById('project-section').style.display = 'none';
     document.getElementById('contact-section').style.display = 'none';
 
   }
@@ -71,6 +76,7 @@ function portfolio() {
     document.getElementById('our-client').style.display = 'none';
     document.getElementById('our-client2').style.display = 'none';
     document.getElementById('about-us').style.display = 'none';
+    document.getElementById('project-section').style.display = 'block';
     document.getElementById('contact-section').style.display = 'none';
 
   }
@@ -84,6 +90,7 @@ function contato() {
     document.getElementById('our-client').style.display = 'none';
     document.getElementById('our-client2').style.display = 'none';
     document.getElementById('about-us').style.display = 'none';
+    document.getElementById('project-section').style.display = 'none';
     document.getElementById('contact-section').style.display = 'block';
 
   }

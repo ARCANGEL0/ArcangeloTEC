@@ -5,8 +5,8 @@
 function prealoader() {
   if ($('#preloader_1').length) {
     $('#preloader_1').fadeOut(); // will first fade out the loading animation
-    $('#loader-wrapper').delay(350).fadeOut('slow'); // will fade out the white DIV that covers the website.
-    $('body').delay(350).css({
+    $('#loader-wrapper').delay(40).fadeOut('slow'); // will fade out the white DIV that covers the website.
+    $('body').delay(40).css({
       'overflow': 'visible'
     });
   };
@@ -27,6 +27,30 @@ function removePlaceholder() {
         });
 
       });
+  }
+}
+
+
+// Scroll to top
+function scrollToTop() {
+  if ($('.scroll-top').length) {
+
+    //Check to see if the window is top if not then display button
+    $(window).on('scroll', function() {
+      if ($(this).scrollTop() > 200) {
+        $('.scroll-top').fadeIn();
+      } else {
+        $('.scroll-top').fadeOut();
+      }
+    });
+
+    //Click event to scroll to top
+    $('.scroll-top').on('click', function() {
+      $('html, body').animate({
+        scrollTop: 0
+      }, 1500);
+      return false;
+    });
   }
 }
 
@@ -190,6 +214,7 @@ function partnersLogo() {
 }
 
 
+
 // Close suddess Alret
 function closeSuccessAlert() {
   var closeButton = $(".closeAlert");
@@ -202,7 +227,6 @@ function closeSuccessAlert() {
     })
   }
 }
-
 
 
 // Calendar
