@@ -95,16 +95,15 @@
 .output {
     text-align: center;
     font-family: 'Source Code Pro', monospace;
-    color: #b3b3b3;
+    color: rgba(246, 173, 31, 0.4);
     font-size: 20px;
-    text-shadow: 0 0 2px #0c100c, 0 0 3px #cecece, 0 0 6px #5a5a5a, 0 2px 2px #8d8d8d;
+    text-shadow: 0 0 0px rgba(246, 173, 31, 0.4), 0 0 3px rgba(246, 173, 31, 0.4), 0 0 3px rgba(246, 173, 31, 0.4), 0 0px 2px rgba(246, 173, 31, 0.4);
 }
 
 .output h1 {
     font-size: 38px;
-    color: #808080;
+    color: rgba(246, 173, 31, 0.4);
     margin-bottom: 39px;
-    text-shadow: 0 0 2px #0c100c, 0 0 3px #474747, 0 0 6px #868686, 0 2px 2px #cfcfcf;
 }
 
 
@@ -115,7 +114,7 @@
     display: inline-block;
     margin-left: 3px;
     margin-bottom: -2px;
-    background-color: #808080;
+    background-color: rgba(246, 173, 31, 0.8);
     animation-name: blink;
     animation-duration: 0.5s;
     animation-iteration-count: infinite;

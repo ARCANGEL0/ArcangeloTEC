@@ -21,7 +21,7 @@ particlesJS('particles-js', {
       }
     },
     "color": {
-      "value": "#ffffff"
+      "value": "#ffb320"
     },
     "shape": {
       "type": "edge",
@@ -61,7 +61,7 @@ particlesJS('particles-js', {
     "line_linked": {
       "enable": true,
       "distance": 160.34120608655215,
-      "color": "#ffffff",
+      "color": "#ffb320",
       "opacity": 0.39283595491205275,
       "width": 1.4430708547789692
     },
