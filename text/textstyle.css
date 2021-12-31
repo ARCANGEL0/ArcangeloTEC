@@ -44,7 +44,7 @@
 @media (max-width: 550px) {
   .container1 {
     height: 380px;
-    width: 270px;
+    width: 50vw !important;
   }
 }
 
@@ -60,7 +60,7 @@
   }
   .container1 {
     height: 380px;
-    width: 320px;
+    width: 50vw !important;
     padding: 15px;
     margin-bottom: 150px;
     justify-content: center;
@@ -82,7 +82,7 @@
   }
   .container1 {
     height: 290px;
-    width: 320px;
+    width: 50vw;
     padding: 15px;
     margin-bottom: 350px;
     justify-content: center;

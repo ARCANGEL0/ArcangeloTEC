@@ -6,9 +6,11 @@ var i = 0,
 
 // Typerwrite text content. Use a pipe to indicate the start of the second line "|".
 var textArray = [
-  "ARC Tec| Design & Tecnologia",
-  "WEB DESIGN|Desenvolvimento de sites e recursos web",
-  "DESIGN GRÁFICO|Criação de recursos gráficos como banners e logotipos, edição e montagem de fotos, criação de ilustrações digitais"
+  "ARC | Design & Tecnologia",
+  "WEB |Desenvolvimento de sites e recursos web",
+  "DESIGN  |Criação de recursos gráficos como banners e logotipos, edição e montagem de fotos, criação de ilustrações digitais",
+  "BANCO DE DADOS | Criação e manutenção de banco de dados, automação de gatilhos e funções SQL",
+  "Fullstack | Desenvolvimento de sistemas web, softwares CRUD e afins."
 ];
 
 // Speed (in milliseconds) of typing.
@@ -38,7 +40,7 @@ function typeWriter(id, ar) {
         eHeader.removeClass("cursor");
         eParagraph.addClass("cursor");
         i++;
-        setTimeout(function() {
+        setTimeout(function () {
           typeWriter(id, ar);
         }, speedBetweenLines);
 
@@ -51,7 +53,7 @@ function typeWriter(id, ar) {
           eParagraph.text(eParagraph.text() + aString.charAt(i));
         }
         i++;
-        setTimeout(function() {
+        setTimeout(function () {
           typeWriter(id, ar);
         }, speedForward);
       }
@@ -60,7 +62,7 @@ function typeWriter(id, ar) {
     } else if (i == aString.length) {
 
       isBackspacing = true;
-      setTimeout(function() {
+      setTimeout(function () {
         typeWriter(id, ar);
       }, speedWait);
 
@@ -81,7 +83,7 @@ function typeWriter(id, ar) {
         eHeader.addClass("cursor");
         eHeader.text(eHeader.text().substring(0, eHeader.text().length - 1));
       }
-      setTimeout(function() {
+      setTimeout(function () {
         typeWriter(id, ar);
       }, speedBackspace);
 
@@ -92,7 +94,7 @@ function typeWriter(id, ar) {
       i = 0;
       isParagraph = false;
       a = (a + 1) % ar.length; //Moves to next position in array, always looping back to 0
-      setTimeout(function() {
+      setTimeout(function () {
         typeWriter(id, ar);
       }, 50);
 
