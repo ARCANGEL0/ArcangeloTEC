@@ -3,75 +3,71 @@
    ========================================================================== */
 
 .tran3s,
-.theme-main-menu .navbar-nav>li a,
+.theme-main-menu .navbar-nav > li a,
 #project-section .project-gallery .single-img .opacity,
 #team-section .team-member-wrapper .single-team-member .member-name h6,
 #team-section .team-member-wrapper .single-team-member .member-name p,
 #team-section .team-member-wrapper .single-team-member .member-name ul,
 #our-client .owl-theme .owl-dots .owl-dot span {
-    -webkit-transition: all .3s ease-in-out;
-    -moz-transition: all .3s ease-in-out;
-    -ms-transition: all .3s ease-in-out;
-    -o-transition: all .3s ease-in-out;
-    transition: all .3s ease-in-out;
+  -webkit-transition: all 0.3s ease-in-out;
+  -moz-transition: all 0.3s ease-in-out;
+  -ms-transition: all 0.3s ease-in-out;
+  -o-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
 }
-
 
 /* =============================================================================
    My CSS
    ========================================================================== */
 
-
 /* ---- base ---- */
-
 
 /* ---- stats.js ---- */
 
 .count-particles {
-    background: #000022;
-    position: absolute;
-    top: 48px;
-    left: 0;
-    width: 80px;
-    color: #f6801f;
-    font-size: .8em;
-    text-align: left;
-    text-indent: 4px;
-    line-height: 14px;
-    padding-bottom: 2px;
-    font-family: Helvetica, Arial, sans-serif;
-    font-weight: bold;
+  background: #000022;
+  position: absolute;
+  top: 48px;
+  left: 0;
+  width: 80px;
+  color: #f6801f;
+  font-size: 0.8em;
+  text-align: left;
+  text-indent: 4px;
+  line-height: 14px;
+  padding-bottom: 2px;
+  font-family: Helvetica, Arial, sans-serif;
+  font-weight: bold;
 }
 
 .js-count-particles {
-    font-size: 1.1em;
+  font-size: 1.1em;
 }
 
 #stats,
 .count-particles {
-    -webkit-user-select: none;
-    margin-top: 5px;
-    margin-left: 5px;
+  -webkit-user-select: none;
+  margin-top: 5px;
+  margin-left: 5px;
 }
 
 #stats {
-    border-radius: 3px 3px 0 0;
-    overflow: hidden;
+  border-radius: 3px 3px 0 0;
+  overflow: hidden;
 }
 
 .count-particles {
-    border-radius: 0 0 3px 3px;
+  border-radius: 0 0 3px 3px;
 }
-
 
 /* ---- particles.js container ---- */
 
 #particles-js {
-    width: 100%;
-    height: 550px;
-    background-color: #000000;
-    background-image: url('');
-    background-size: cover;
-    background-position: 50% 50%;
-    background-repeat: no-repeat;
+  width: 100%;
+  height: 100vh;
+  background-color: #000000;
+  background-image: url("");
+  background-size: cover;
+  background-position: 50% 50%;
+  background-repeat: no-repeat;
 }
