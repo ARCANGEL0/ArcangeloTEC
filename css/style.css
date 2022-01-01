@@ -2010,6 +2010,16 @@ footer p {
   padding: 0 15px;
 }
 
+#gallery {
+  display: grid;
+  grid-column-gap: 5px;
+  grid-row-gap: 5px;
+}
+
+.gridComponent {
+  display: flex;
+  align-items: center;
+}
 .blog-details-post-wrapper .post-comment textarea {
   width: 100%;
   max-width: 100%;
@@ -2060,7 +2070,7 @@ footer p {
   .respmapa {
     margin-top: 90px !important;
     height: 480px !important;
-    width: 90vw !important;
+    width: 45vw;
   }
 }
 
