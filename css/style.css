@@ -2054,7 +2054,7 @@ footer p {
 /* fullscreen */
 @media only screen and (min-height: 700px) {
   #sobre {
-    margin-bottom: 120px;
+    margin-bottom: 150px;
   }
   #particles-js {
     height: 700px !important;
@@ -2062,7 +2062,7 @@ footer p {
   .respmapa {
     margin-top: 90px !important;
     height: 480px !important;
-    width: 90vw !important;
+    width: 45vw !important;
   }
 }
 
