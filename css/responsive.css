@@ -110,6 +110,7 @@
 /*(min-width: 768px) and (max-width: 991px)*/
 
 @media (max-width: 767px) {
+
   .scroll-top {
     bottom: 10px;
     right: 5px;
@@ -189,6 +190,10 @@
 /*(max-width: 767px)*/
 
 @media (max-width: 650px) {
+  #logoimage {
+    margin-top:4px;
+    width: 40%;
+  }
   #success,
   #error {
     width: 84%;
@@ -213,6 +218,10 @@
 }
 
 @media (max-width: 550px) {
+  #logoimage {
+    margin-top:4px !important;
+    width: 40% !important;
+  }
   .mapa-area {
     width: 50vw;
   }
