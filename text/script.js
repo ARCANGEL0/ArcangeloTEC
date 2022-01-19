@@ -6,7 +6,7 @@ var i = 0,
 
 // Typerwrite text content. Use a pipe to indicate the start of the second line "|".
 var textArray = [
-  "ARC | Design & Tecnologia",
+  "HA Design | Design & Tecnologia",
   "WEB |Desenvolvimento de sites e recursos web",
   "DESIGN  |Criação de recursos gráficos como banners e logotipos, edição e montagem de fotos, criação de ilustrações digitais",
   "BANCO DE DADOS | Criação e manutenção de banco de dados, automação de gatilhos e funções SQL",
