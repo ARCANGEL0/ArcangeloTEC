@@ -257,6 +257,13 @@ textarea {
   color: #ffffff !important;
 }
 
+.us, .br {
+  margin-bottom: 4px !important;
+
+}
+#enus, #ptbr {
+  cursor: pointer !important;
+}
 
 .language{
   font-size:12px;

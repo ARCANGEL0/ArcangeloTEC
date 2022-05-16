@@ -1,4 +1,18 @@
 
+
+$("#enus").on('click',() => {
+
+window.location.href = location.href + 'EN-US'
+})
+
+
+$("#ptbr").on('click',() => {
+
+window.location.href = location.href.substring(0, location.href.lastIndexOf("/") +1)
+})
+
+
+
 $("#mandaremail").on('submit', (e) => {
 
 
@@ -7,7 +21,7 @@ $("#mandaremail").on('submit', (e) => {
     Email.send({
       SecureToken: "74d83c5b-691d-4972-8309-a773d45fbd16",
       To: 'henrique@arcangelo.dev',
-      From: 'ryuusakis@gmail.com',
+      From: 'henrique@arcangelo.dev',
       Subject: $("#assunto_form").val(),
       Body: body
     }).then(
