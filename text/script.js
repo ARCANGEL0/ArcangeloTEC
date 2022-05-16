@@ -7,10 +7,10 @@ var i = 0,
 // Typerwrite text content. Use a pipe to indicate the start of the second line "|".
 var textArray = [
   "HA Design | Design & Tecnologia",
-  "WEB |Desenvolvimento de sites e recursos web",
-  "DESIGN  |Criação de recursos gráficos como banners e logotipos, edição e montagem de fotos, criação de ilustrações digitais",
-  "BANCO DE DADOS | Criação e manutenção de banco de dados, automação de gatilhos e funções SQL",
-  "Fullstack | Desenvolvimento de sistemas web, softwares CRUD e afins."
+  "WEB |Desenvolvimento de sites e sistemas",
+  "DESIGN  |Criação da identidade visual, flyers, cartões e logotipos, edição e montagem de fotos e vídeos, criação de ilustrações e artes pras redes sociais",
+  "BANCO DE DADOS | Criação e manutenção de banco de dados, automatização de dados",
+  "FULLSTACK | Desenvolvimento de sistemas web, aplicativos, softwares e afins."
 ];
 
 // Speed (in milliseconds) of typing.

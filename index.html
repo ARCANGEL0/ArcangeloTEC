@@ -17,16 +17,56 @@
 
     <link rel="icon" type="image/png" sizes="56x56" href="images/fav-icon/icon.png">
 
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.min.css">
+
+<link rel="stylesheet" href="css/portfolioholder.css">
 
 
-
-    <link rel="stylesheet" type="text/css" href="css/style.css">
 
     <link rel="stylesheet" type="text/css" href="css/responsive.css">
 
     <link rel="stylesheet" type="text/css" href="css/serviçobtn.css">
 
 
+
+<!-- mdb -->
+
+
+<!-- Font Awesome -->
+<link
+  href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+  rel="stylesheet"
+/>
+<!-- Google Fonts -->
+<link
+  href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap"
+  rel="stylesheet"
+/>
+<!-- MDB -->
+<link
+  href="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/4.0.0/mdb.min.css"
+  rel="stylesheet"
+/>
+
+<!-- mdb -->
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+
+
+<!-- MDB -->
+<script
+  type="text/javascript"
+  src="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/4.0.0/mdb.min.js"
+></script>
+
+
+<script src="js/portfolio.js"></script>
+<script src="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<!------ Include the above in your HEAD tag ---------->
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/magnific-popup.css" />
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.isotope/3.0.6/isotope.pkgd.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/jquery.magnific-popup.js"></script>
 
 
 </head>
@@ -38,8 +78,8 @@
 
         <header class="theme-main-header">
             <div class="container">
-                <a href="https://arcangel0.github.io/ARC_UI/" class="logo float-left tran4s"><img
-                        src="images/logo/logo1.png" alt="Logo" id="logoimage" style="margin-top:-10px;width:60%"></a>
+                <a class="logo float-left tran4s"><img src="images/logo/logo1.png" alt="Logo" id="logoimage"
+                        style="margin-top:-10px;width:60%"></a>
 
 
                 <nav class="navbar float-right theme-main-menu one-page-menu">
@@ -55,20 +95,14 @@
 
                     <div class="collapse navbar-collapse" id="navbar-collapse-1">
                         <ul class="nav navbar-nav">
-                            <li><a href="#" href="" onclick="inicio('home')">Início</a></li>
-                            <li><a href="#" onclick="sobre('sobre')">Sobre</a></li>
-                            <li><a href="#" onclick="servicos('about-us')">Serviços</a>
+                            <li><a href="#" href="" onclick="inicio()">Início</a></li>
+                            <li><a href="#" onclick="sobre()">Sobre</a></li>
+                            <li><a href="#" onclick="servicos()">Serviços</a>
 
-                                <ul class="sub-menu">
-                                    <li class=><a href="#" onclick="web('our-client2')" class="tran3s">Web design</a>
-                                    </li>
-                                    <li><a href="#" onclick="design('our-client')" class="tran3s">Design Gráfico</a>
-                                    </li>
-
-                                </ul>
                             </li>
+                            <li><a href="#" onclick="portfolio()">Portfólio</a></li>
 
-                            <li><a href="#" onclick="contato('contact-section')">Contato</a></li>
+                            <li><a href="#" onclick="contato()">Contato</a></li>
                         </ul>
                     </div>
 
@@ -109,20 +143,20 @@
         <div class="sobre ">
             <br><br>
             <p class="head">
-                Sou um programador e ilustrador que realiza prestação de alguns serviços voltados à Design e
-                Desenvolvimento fullstack tais como:
+                Sou um desenvolvedor e designer que realiza prestação de serviços voltados à Design e
+                Desenvolvimento de software:
             </p>
             <br>
-            <p>• Desenvolvimento e manutenção de sites responsivos e bancos de dados</p> <br>
-            <p>• Elaboração de diagramas e modelos lógicos, de banco de dados, e de casos de uso. Criação de
-                illustrações e recursos
-                gráficos para identidade visual</p><br>
-            <p>• Criação de Sistemas Web e softwares para gerenciamento e controle. Integração de API's e
-                desenvolvimento fullstack de aplicações
+            <p>• Desenvolvimento e manutenção de site, bancos de dados e aplicações web</p> <br>
+
+            <p>• Criação de identidade visual com marca, logotipos, banners, cartões, flyers, artes digitais e posts
+                para redes sociais</p><br>
+
+            <p>• Criação de aplicativos e softwares sob demanda.
             </p>
             <br>
-            <p>• Edição de imagens,montagens e vídeos</p><br>
-            <p>• Criação de flyers, banners e outros recursos para divulgação nas mídias sociais</p>
+            <p>• Conserto e manutenção de computadores e periféricos. Backup, formatação e remoção de vírus</p><br>
+            <p>• Correção de aplicações e sites de bugs ou vulnerabilidades presentes </p>
         </div>
     </div>
 
@@ -131,7 +165,7 @@
 
 
 
-    <section id="about-us" class="animated fadeInUp">
+    <section id="servicos" class="animated fadeInUp">
         <div class="container">
             <div class="theme-title">
                 <h2>Serviços</h2>
@@ -144,13 +178,12 @@
                         <div class="icon round-border tran3s">
                             <i class="fa fa-desktop" aria-hidden="true"></i>
                         </div>
-                        <h5><a href="#" class="tran3s">Web Design</a></h5>
-                        <p>• Criação de sites responsivos e dinâmicos •</p>
-                        <P>• Criação de sistemas web, e-commerces e outros paineis de controle •</P>
-                        <p>• Manutenção e correção de possíveis bugs no website •</p>
+                        <h5><a class="tran3s">Web</a></h5>
+                        <p>• Criação de sites responsivos •</p>
+                        <P>• Optimização e SEO do website •</P>
+                        <p>• Manutenção e correção de bugs ou desatualizações no site •</p>
 
 
-                        <a href="#" onclick="web()" class="more tran3s hvr-bounce-to-right">Mais detalhes</a>
                     </div>
 
                 </div>
@@ -160,19 +193,15 @@
                         <div class="icon round-border tran3s">
                             <i class="fa fa-pencil-square-o" aria-hidden="true"></i>
                         </div>
-                        <h5><a href="#" onclick="design()" class="tran3s ">Design digital</a></h5>
-                        <p>• Desenvolvimento de recursos gráficos diversos como logotipos, flyers, banners, artes
-                            digitais
-                            ilustrações e outros. •
-                        <p> • Edição e montagem de fotos e vídeos com aplicação de efeitos, alteração de paisagem ou
-                            remoção
-                            de objetos/pessoas e afins. •</p>
+                        <h5><a class="tran3s ">Design digital</a></h5>
+                        <p>• Desenvolvimento de recursos gráficos diversos como logotipos, flyers, cartões, artes
+                            digitais, ilustrações e outros. •
+                        <p> • Edição e montagem de fotos e vídeos, criação de posts para redes sociais e afins •</p>
                         </p>
                         <p>
 
 
                         </p>
-                        <a href="#" onclick="design()" class="more tran3s hvr-bounce-to-right ">Mais detalhes</a>
                     </div>
 
 
@@ -187,101 +216,147 @@
                         <div class="icon round-border tran3s ">
                             <i class="fa fa-database " aria-hidden="true"></i>
                         </div>
-                        <h5><a href="#" onclick="web()" class="tran3s ">Gerenciamento de banco de dados</a></h5>
-                        <p>• Desenvolvimento de um banco de dados • </p>
-                        <p>• Automação dos procedimentos de banco de dados com gatilhos e funções, para realizar ações
-                            após eventos específicos •</p>
-                        <p>• Manutenção e reparo de bugs ou falhas de segurança do banco de dados •</p>
-                        <a href="#" onclick="web()" class="more tran3s hvr-bounce-to-right ">Mais detalhes</a>
+                        <h5><a class="tran3s ">Banco de dados</a></h5>
+                        <p>• Criação e gerenciamento de banco de dados • </p>
+                        <p>• Automatização de informações no banco de dados •</p>
+                        <p>• Manutenção e correção de erros ou falhas de segurança do banco de dados •</p>
                     </div>
 
                 </div>
 
+                <div class="col-lg-4 col-md-4 col-sm-6 ">
+                    <div class="single-about-content ">
+                        <div class="icon round-border tran3s ">
+                            <i class="fa fa-wrench" aria-hidden="true"></i>
+                        </div>
+                        <h5><a class="tran3s ">Manutenção de periféricos</a></h5>
+                        <p>• Conserto de computadores e periféricos no geral • </p>
+                        <p>• Backup, formatação e remoção de vírus •</p>
+                        <p>• Instalação de Windows e Softwares •</p>
+                    </div>
+
+                </div>
+
+                <div class="col-lg-4 col-md-4 col-sm-6 ">
+                    <div class="single-about-content ">
+                        <div class="icon round-border tran3s ">
+                            <i class="fa fa-code " aria-hidden="true"></i>
+                        </div>
+                        <h5><a class="tran3s ">Desenvolvimento de sistemas</a></h5>
+                        <p>• Criação de sistemas e aplicativos sob demanda • </p>
+                        <p>• Desenvolvimento de API's para integrar em outras plataformas •</p>
+                        <p>• Criação de plataformas ou aplicações como e-commerce •</p>
+                    </div>
+
+                </div>
+
+                <div class="col-lg-4 col-md-4 col-sm-6 ">
+                    <div class="single-about-content ">
+                        <div class="icon round-border tran3s ">
+                            <i class="fa fa-bug " aria-hidden="true"></i>
+                        </div>
+                        <h5><a class="tran3s ">Segurança</a></h5>
+                        <p>• Análise e correção de vírus, erros ou vulnerabilidades que comprometem a segurança do
+                            sistema ou dispositivo• </p>
+                        <p>• Correção de bugs e/ou erros que indisponibilizam funcionamento do software •</p>
+                    </div>
+
+                </div>
             </div>
 
         </div>
 
     </section>
 
-    <div id="contact-section" class="animated fadeInUp">
-        <div class="container">
-            <div class="clear-fix contact-address-content">
-                <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 bbb">
-                    <div class="left-side">
-                        <h2>Contato</h2>
+    <div id="contato" class="animated fadeInUp">
+        <div class=" container">
+            <div class=" clear-fix contact-address-content">
 
 
-                        <ul>
-                            <li>
-                                <a target="_blank"
-                                    href="https://www.google.com/maps/place/R.+Manoel+Ara%C3%BAjo,+274+-+Vila+Santo+Ant%C3%B4nio,+Guaruj%C3%A1+-+SP,+11432-390/data=!4m2!3m1!1s0x94ce01e079a4e649:0x6068d9f3e12499e7?sa=X&ved=2ahUKEwjA0MOtspntAhUTA9QKHbDzBI0Q8gEwAHoECAsQAQ">
-                                    <div class="icon tran3s round-border p-color-bg"><i class="fa fa-map-marker"
-                                            aria-hidden="true"></i></div>
-                                </a>
-                                <h3>Endereço</h3>
-                            </li>
-                            <li>
-                                <a target="_blank" href=" https://wa.me/5513988504778 ">
-                                    <div class="icon tran3s round-border p-color-bg"><i class="fa fa-whatsapp"
-                                            aria-hidden="true"></i></div>
-                                </a>
-                                <h3>Telefone</h3>
+                <div class=" left-side">
+                    <h2>Contato</h2>
 
-                            </li>
-                            <li>
-                                <a target="_blank" href="mailto:henrique@arcangelo.dev">
-                                    <div class="icon tran3s round-border p-color-bg"><i class="fa fa-envelope-o"
-                                            aria-hidden="true"></i></div>
-                                </a>
-                                <h3>Email</h3>
-                            </li>
-                            <li>
-                                <a target="_blank" href="https://github.com/ARCANGEL0">
-                                    <div class="icon tran3s round-border p-color-bg"><i class="fa fa-github"
-                                            aria-hidden="true"></i></div>
-                                </a>
-                                <h3>Github</h3>
-                            </li>
-                            <li>
-                                <a target="_blank" href="https://www.facebook.com/henriquearcangel">
-                                    <div class="icon tran3s round-border p-color-bg"><i class="fa fa-facebook"
-                                            aria-hidden="true"></i></div>
-                                </a>
-                                <h3>Facebook</h3>
 
-                            </li>
-                            <li>
-                                <a target="_blank" href="https://www.instagram.com/henry__arcangelo/">
-                                    <div class="icon tran3s round-border p-color-bg"><i class="fa fa-instagram"
-                                            aria-hidden="true"></i></div>
-                                </a>
-                                <h3>Instagram</h3>
+                    <ul>
 
-                            </li>
-                        </ul>
-                    </div>
+                        <li>
+                            <a target="_blank" href=" https://wa.me/5513988504778 ">
+                                <div class="icon tran3s round-border p-color-bg"><i class="fa fa-whatsapp"
+                                        aria-hidden="true"></i></div>
+                            </a>
+                            <h3>Telefone</h3>
 
-                </div>
-                <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
-                    <div class="mapa-area maps">
-                        <h2></h2>
-                        <div></div>
+                        </li>
+                        <li>
+                            <a target="_blank" href="mailto:henrique@arcangelo.dev">
+                                <div class="icon tran3s round-border p-color-bg"><i class="fa fa-envelope-o"
+                                        aria-hidden="true"></i></div>
+                            </a>
+                            <h3>Email</h3>
+                        </li>
+                        <li>
+                            <a target="_blank" href="https://github.com/ARCANGEL0">
+                                <div class="icon tran3s round-border p-color-bg"><i class="fa fa-github"
+                                        aria-hidden="true"></i></div>
+                            </a>
+                            <h3>Github</h3>
+                        </li>
+                        <li>
+                            <a target="_blank" href="https://www.facebook.com/henriquearcangel">
+                                <div class="icon tran3s round-border p-color-bg"><i class="fa fa-facebook"
+                                        aria-hidden="true"></i></div>
+                            </a>
+                            <h3>Facebook</h3>
 
-                        <iframe class="respmapa"
-                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3645.2194815093567!2d-46.26898298501413!3d-23.988025484472796!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ce01e079a4e649%3A0x6068d9f3e12499e7!2sR.%20Manoel%20Ara%C3%BAjo%2C%20274%20-%20Vila%20Santo%20Ant%C3%B4nio%2C%20Guaruj%C3%A1%20-%20SP%2C%2011432-390!5e0!3m2!1spt-BR!2sbr!4v1570567967100!5m2!1spt-BR!2sbr"
-                            height="550" width="600" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
-                        <br><br>
-                    </div>
+                        </li>
+                        <li>
+                            <a target="_blank" href="https://www.instagram.com/henry__arcangelo/">
+                                <div class="icon tran3s round-border p-color-bg"><i class="fa fa-instagram"
+                                        aria-hidden="true"></i></div>
+                            </a>
+                            <h3>Instagram</h3>
+
+                        </li>
+                    </ul>
                 </div>
 
+                <div class=" right-side">
+
+                    <h2>Entre em contato!</h2>
+                    <form id="mandaremail">
+
+
+                        <div class="form-group">
+                            <label for="nome_form">Nome</label>
+                            <input required type="text" class="form-control" id="nome_form" placeholder="Seu nome">
+                        </div>
+
+                        <div class="form-group">
+                            <label for="email_form">Email</label>
+                            <input required type="email" class="form-control" id="email_form"
+                                placeholder="exemplo@email.com">
+                        </div>
+
+                        <div class="form-group">
+                            <label for="assunto_form">Assunto</label>
+                            <input required type="text" class="form-control" id="assunto_form"
+                                placeholder="Criação de website...">
+                        </div>
+
+                        <div class="form-group">
+                            <label for="mensagem_form">Mensagem</label>
+                            <textarea required class="form-control" id="mensagem_form" rows="4"></textarea>
+                        </div>
+                        <button id="enviar" type="submit" style="border: 0.65px solid black"
+                            class="btn more tran3s hvr-bounce-to-right">Enviar</button>
+                    </form>
+                </div>
             </div>
 
-        </div>
 
-        <p< /p>
-            </p>
-            <p< /p>
-                </p>
+        </div>
+    </div>
+
 
 
 
@@ -293,69 +368,238 @@
     </div>
 
 
-    <section id="our-client">
+    <section id="portfolio">
         <div class="container animated fadeInUp">
             <div class="theme-title">
-                <h2>Design Gráfico</h2>
+                <h2>Portfólio</h2>
                 <p></p>
             </div>
 
-            <div class="row">
-                <div class="col-lg-3 col-md-3 col-sm-6">
-                    <div class="single-about-content">
-                        <div class="icon round-border tran3s">
-                            <i class="fa fa-lightbulb-o" aria-hidden="true"></i>
-                        </div><br><br>
-                        <p>● Criação de recursos gráficos para empresas e lojas, tais como logotipos, anúncios e outros.
-                        </p>
-                        <p>● Criação de designs criativos e layouts dinâmicos para melhor apresentação do seu comércio
-                        </p>
-
-
-                    </div>
-
-                </div>
-
-                <div class="col-lg-3 col-md-3 col-sm-6">
-                    <div class="single-about-content">
-                        <div class="icon round-border tran3s">
-                            <i class="fa fa-print" aria-hidden="true"></i>
-                        </div><br><br>
-                        <center>
-                            <p>● Criação de cartões de visita, convites e outros</p>
-                            <p> ● Atendimento a pedidos específicos do cliente </p>
-                            <p>● Criação e impressão de artes gráficas como anúncios, flyers e banners. </p>
-                        </center>
-                        <br><br><br>
-                        <center> <a onclick="contato()" href="#" class="more tran3s hvr-bounce-to-right">Entrar em
-                                contato</a>
-                        </center>
-
-                    </div>
-
-
-                </div>
+          
+         <div class="teste">
+             
 
 
 
+<!-- Gallery -->
+<div class="row">
+  <div class="col-lg-4 col-md-12 mb-4 mb-lg-0">
+    <img
+      src="images/portfolio/logos/logoAVA4.jpg"
+      class="w-100 img-fluid shadow-1-strong rounded mb-4"
+      alt="Boat on Calm Water"
+    />
+
+    <img
+      src="images/portfolio/Cards/psicologaCard/psico1.png"
+      class="w-100 img-fluid shadow-1-strong rounded mb-4"
+      alt="Wintry Mountain Landscape"
+    />
+  </div>
+
+  <div class="col-lg-4 mb-4 mb-lg-0">
+    <img
+      src="images/portfolio/Cards/psicologaCard/psico2.png"
+      class="w-100 img-fluid shadow-1-strong rounded mb-4"
+      style="height:60.8%"
+      alt="Mountains in the Clouds"
+    />
+
+    <img
+      src="images/portfolio/Cards/icarusCard/icarus2.png"
+      class="w-100 img-fluid shadow-1-strong rounded mb-4"
+      alt="Boat on Calm Water"
+    />
+  </div>
+
+  <div class="col-lg-4 mb-4 mb-lg-0">
+    <img
+      src="images/portfolio/Cards/icarusCard/icarus1.png"
+      style="height:60%"
+      class="w-100 img-fluid shadow-1-strong rounded mb-4"
+      alt="Waves at Sea"
+    />
+
+    <img
+      src="images/portfolio/website2.png"
+      class="w-100 img-fluid shadow-1-strong rounded mb-4"
+      alt="Yosemite National Park"
+    />
+  </div>
+   
+<div class="col-lg-4 mb-4 mb-lg-0">
+    <img
+      src="images/portfolio/confeitaria1.png"
+      style="height:30%;"
+      class="w-100 img-fluid shadow-1-strong rounded mb-4"
+      alt="Waves at Sea"
+    />
+
+    <img
+      src="images/portfolio/confeitaria3.png"
+      class="w-100 img-fluid shadow-1-strong rounded mb-4"
+      alt="Yosemite National Park"
+    />
+
+  </div>
+   <div style="margin-top:20vh" class="col-lg-4 mb-4 mb-lg-0">
+    <img
+      src="images/portfolio/logos/logo.png"
+      style="height:50%;margin-top:-10vh"
+      class="w-100 img-fluid shadow-1-strong rounded mb-4"
+      alt="Waves at Sea"
+    />
+
+    <img
+      src="images/portfolio/sistemas/GreenWaste4.png"
+      class="w-100 img-fluid shadow-1-strong rounded mb-4"
+      alt="Yosemite National Park"
+    />
+  </div>
+   
+
+  <div class="col-lg-4 col-md-12 mb-4 mb-lg-0">
+    <img
+      src="images/portfolio/hadesign.png"
+      class="w-100 img-fluid shadow-1-strong rounded mb-4"
+      alt="Boat on Calm Water"
+    />
+
+    <img
+      src="images/portfolio/nature2.png"
+      class="w-100 img-fluid shadow-1-strong rounded mb-4"
+      alt="Wintry Mountain Landscape"
+    />
+  </div>
+
+ 
+</div>
+<!-- Gallery -->
 
 
-                <div class="col-lg-3 col-md-3 col-sm-6 ">
-                    <div class="single-about-content ">
-                        <div class="icon round-border tran3s ">
-                            <i class="fa fa-edit " aria-hidden="true"></i>
-                        </div>
-                        <br><br>
-                        <p>● Criação de ilustrações e artes digitais</p>
-                        ● Digitalização de desenhos, projetos e outros </p>
-                        <p>● Edição e montagem de fotos</p>
-                    </div>
-
-                </div>
-
+<div class="video">
+        
+       <div class="theme-title">
+                <h2>Modelos de websites</h2>
+                <p></p>
             </div>
+    <!-- Carousel wrapper -->
+<div
+  id="carouselVideoExample"
+  class="carousel slide carousel-fade"
+  data-mdb-ride="carousel"
+>
+  <!-- Indicators -->
+  <div class="carousel-indicators">
+    <button
+      type="button"
+      data-mdb-target="#carouselVideoExample"
+      data-mdb-slide-to="0"
+      class="active"
+      aria-current="true"
+      aria-label="Slide 1"
+    ></button>
+    <button
+      type="button"
+      data-mdb-target="#carouselVideoExample"
+      data-mdb-slide-to="1"
+      aria-label="Slide 2"
+    ></button>
+    <button
+      type="button"
+      data-mdb-target="#carouselVideoExample"
+      data-mdb-slide-to="2"
+      aria-label="Slide 3"
+    ></button>
+  </div>
+
+  <!-- Inner -->
+  <div class="carousel-inner">
+    <!-- Single item -->
+    <div class="carousel-item active">
+      <video                   style="width:100%"
+ class="img-fluid" autoplay loop muted>
+        <source
 
 
+ src="images/portfolio/Videos/escoteiros.mp4" type="video/mp4" />
+      </video>
+      <div class="carousel-caption d-none d-md-block">
+        <h5 style="color: white">77º GEMAR Jair Mattenauer Silveira</h5>
+        <p>
+          <a style="color:inherit" href="http://77gemar-jairmattenauer.com/#/"> 77gemar-jairmattenauer.com</a>
+        </p>
+      </div>
+    </div>
+
+    <!-- Single item -->
+    <div class="carousel-item">
+      <video                    style="width:100%"
+ class="img-fluid" autoplay loop muted>
+        <source src="images/portfolio/Videos/arcUI.mp4" 
+
+type="video/mp4" />
+      </video>
+      <div class="carousel-caption d-none d-md-block">
+        <h5 style="color:cyan">Arc UI</h5>
+        <p>
+          <a style="color: cyan" href="https://arcangel0.github.io/ARC_UI">
+          ARCANGEL0.github.io/Arc_UI
+              
+          </a>
+        </p>
+      </div>
+    </div>
+
+    <!-- Single item -->
+    <div class="carousel-item">
+      <video class="img-fluid"           style="width:100%"
+ autoplay loop muted>
+        <source
+          src="images/portfolio/Videos/GreenWaste.mp4"
+          type="video/mp4"
+        />
+      </video>
+      <div class="carousel-caption d-none d-md-block">
+        <h5>GreenWaste - Prototype</h5>
+        <p >
+          <a style="color: black; font-weight: 400" href="https://www.figma.com/proto/0mdUZudli6F4nszZvXsMFb/GreenWaste?node-id=81%3A666&starting-point-node-id=81%3A666"> https://www.figma.com/proto/0mdUZudli6F4nszZvXsMFb/GreenWaste?node-id=81%3A666&starting-point-node-id=81%3A666</a>
+        </p>
+      </div>
+    </div>
+  </div>
+  <!-- Inner -->
+
+  <!-- Controls -->
+  <button
+    class="carousel-control-prev"
+    type="button"
+    data-mdb-target="#carouselVideoExample"
+    data-mdb-slide="prev"
+  >
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Previous</span>
+  </button>
+  <button
+    class="carousel-control-next"
+    type="button"
+    data-mdb-target="#carouselVideoExample"
+    data-mdb-slide="next"
+  >
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Next</span>
+  </button>
+</div>
+<!-- Carousel wrapper -->
+</div>
+
+
+
+<!-- video -->
+
+         </div>
+ <br><br><br><br>
+  <br><br><br><br>
 
 
 
@@ -363,73 +607,6 @@
 
 
 
-    <section id="our-client2">
-        <div class="container animated fadeInUp">
-            <div class="theme-title">
-                <h2>Web Design</h2>
-                <p></p>
-            </div>
-
-            <div class="row">
-                <div class="col-lg-3 col-md-3 col-sm-6">
-                    <div class="single-about-content">
-                        <div class="icon round-border tran3s">
-                            <i class="fa fa-database" aria-hidden="true"></i>
-                        </div><br><br>
-                        <p>● Criação de banco de dados SQL.</p>
-                        <p>● Atualização e gerenciamento do Banco de Dados. </p>
-                        <p>● Criação de recursos server-side com PHP, tais como formulários de login e contato. </p>
-
-
-                    </div>
-
-                </div>
-
-                <div class="col-lg-3 col-md-3 col-sm-6">
-                    <div class="single-about-content">
-                        <div class="icon round-border tran3s">
-                            <i class="fa fa-code" aria-hidden="true"></i>
-                        </div><br><br>
-                        <center>
-                            <p>● Criação de Dashboards/Paineis de controle</p>
-                            <p>● Criação de Scripts back-end com uso de PHP/Laravel e outros para usos diversos</p>
-                            <p>● Criação de Sistemas de gerenciamento para plataformas como Emby,IPTV, e outros através
-                                de API's</p>
-                        </center>
-                        <br><br><br>
-                        <center> <a onclick="contato()" href="#" class="more tran3s hvr-bounce-to-right">Entrar em
-                                contato</a>
-                        </center>
-
-                    </div>
-
-
-                </div>
-
-
-
-
-
-                <div class="col-lg-3 col-md-3 col-sm-6 ">
-                    <div class="single-about-content ">
-                        <div class="icon round-border tran3s ">
-                            <i class="fa fa-desktop " aria-hidden="true"></i>
-                        </div>
-                        <br><br>
-                        <p>● Criação e manutenção de sites com HTML5.</p>
-                        <p>● Estilização e design do site com CSS e JavaScript.</p>
-                        <p>● Desenvolvimento de recursos responsivos para a página em diferentes telas.</p>
-                    </div>
-
-                </div>
-
-            </div>
-
-
-
-
-
-    </section>
 
 
 
@@ -440,6 +617,7 @@
     </div>
     <footer>
         <div class="container " style="height:10vh">
+            <br>
             <p>Copyright ©
                 <script>
                     document.write(new Date().getFullYear());
@@ -464,20 +642,21 @@
     </div>
 
 
+
     <script type="text/javascript" src="vendor/jquery.2.2.3.min.js"></script>
 
-    <script type="text/javascript" src="vendor/bootstrap/bootstrap.min.js"></script>
+    <!-- JavaScript Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2"
+        crossorigin="anonymous"></script>
 
 
-
-
-
-
-
+    <script src="https://smtpjs.com/v3/smtp.js">
+    </script>
 
     <script type="text/javascript" src="vendor/jquery.mixitup.min.js"></script>
 
-
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.min.js"></script>
 
 
     <script type="text/javascript" src="js/theme.js"></script>

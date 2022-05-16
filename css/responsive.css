@@ -60,12 +60,12 @@
     width: 15%;
   }
   .theme-main-menu .navbar-nav > li > a {
-    padding: 9px 12px;
+    padding: 9px 12px !important;
   }
   .theme-title p {
     width: 95%;
   }
-  #our-client .client-slider p {
+  #portfolio .client-slider p {
     width: 70%;
   }
   .recent-single-post .post {
@@ -87,19 +87,19 @@
     margin-top: 30px;
   }
   .theme-main-menu .navbar-nav > li > a {
-    padding: 9px 8px;
+    padding: 9px 8px !important;
   }
   .theme-main-header.fixed .logo {
-    display: none;
+    display: none !important;
   }
   .theme-main-header.fixed .theme-main-menu.navbar {
-    margin-top: 0;
+    margin-top: 0 !important;
   }
   #project-section .project-gallery .grid-item,
   #team-section .team-member-wrapper .float-left {
     width: 50%;
   }
-  #our-client .client-slider p {
+  #portfolio .client-slider p {
     width: 90%;
   }
   .inner-page-banner .opacity {
@@ -144,8 +144,8 @@
     display: block;
   }
   .theme-main-menu .navbar-nav > li > a {
-    padding: 0;
-    line-height: 44px;
+    padding: 0 !important;
+    line-height: 44px !important;
   }
   .theme-main-menu.navbar .nav > li ul.sub-menu {
     position: static;
@@ -169,7 +169,7 @@
   }
   #team-section .team-member-wrapper .float-left,
   #team-section .team-member-wrapper .float-left img,
-  #our-client .client-slider p {
+  #portfolio .client-slider p {
     width: 100%;
   }
   #team-section .team-member-wrapper .float-left,
@@ -177,8 +177,8 @@
   #service-section .row [class*="col-"],
   #skill-section [class*="col-"],
   #pricing-section [class*="col-"],
-  #contact-section .send-message,
-  #contact-section .contact-address-content [class*="col-"],
+  #contato .send-message,
+  #contato .contact-address-content [class*="col-"],
   #blog-section [class*="col-"],
   .theme-main-header .container,
   .blog-details-page .p-fix {
