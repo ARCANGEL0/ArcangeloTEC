@@ -257,6 +257,15 @@ textarea {
   color: #ffffff !important;
 }
 
+
+.language{
+  font-size:12px;
+}
+.language img{
+  height:15px;
+  width: 15px;
+  display:inline;
+}
 .tran4s,
 #service-section .single-service-content p,
 #project-section .project-gallery .single-img .opacity ul,
