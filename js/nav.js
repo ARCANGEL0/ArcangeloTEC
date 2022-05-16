@@ -2,13 +2,13 @@
 
 $("#enus").on('click',() => {
 
-window.location.href = location.href + 'EN-US'
+window.location.href = 'https://arcangelo.dev/EN-US'
 })
 
 
 $("#ptbr").on('click',() => {
 
-window.location.href = location.href.substring(0, location.href.lastIndexOf("/") +1)
+window.location.href = 'https://arcangelo.dev'
 })
 
 
