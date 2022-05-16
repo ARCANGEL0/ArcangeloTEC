@@ -17,7 +17,7 @@
 
     <link rel="icon" type="image/png" sizes="56x56" href="images/fav-icon/icon.png">
 
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.min.css">
+  
 
 <link rel="stylesheet" href="css/portfolioholder.css">
 
@@ -68,6 +68,7 @@
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.isotope/3.0.6/isotope.pkgd.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/jquery.magnific-popup.js"></script>
 
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.min.css">
 
 </head>
 
@@ -85,8 +86,8 @@
                 <nav class="navbar float-right theme-main-menu one-page-menu">
 
                     <div class="navbar-header">
-                        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse"
-                            data-target="#navbar-collapse-1" aria-expanded="false">
+                        <button type="button" class="navbar-toggle collapsed" data-mdb-toggle="collapse"
+                            data-mdb-target="#navbar-collapse-1" aria-expanded="false">
                             <span class="sr-only">Navegação</span>
                             Menu
                             <i class="fa fa-bars" aria-hidden="true"></i>
@@ -172,14 +173,14 @@
                 <p></p>
             </div>
 
-            <div class="row">
-                <div class="col-lg-3 col-md-3 col-sm-6">
+            <div class="row rowservicos">
+                <div class="col-lg-4 col-md-4-lg-3 col-md-3 col-sm-6">
                     <div class="single-about-content">
                         <div class="icon round-border tran3s">
                             <i class="fa fa-desktop" aria-hidden="true"></i>
                         </div>
                         <h5><a class="tran3s">Web</a></h5>
-                        <p>• Criação de sites responsivos •</p>
+                        <p>• Criação de websites responsivos •</p>
                         <P>• Optimização e SEO do website •</P>
                         <p>• Manutenção e correção de bugs ou desatualizações no site •</p>
 
@@ -188,7 +189,7 @@
 
                 </div>
 
-                <div class="col-lg-3 col-md-3 col-sm-6">
+                <div class="col-lg-4 col-md-4 col-sm-6">
                     <div class="single-about-content">
                         <div class="icon round-border tran3s">
                             <i class="fa fa-pencil-square-o" aria-hidden="true"></i>
@@ -211,7 +212,7 @@
 
 
 
-                <div class="col-lg-3 col-md-3 col-sm-6 ">
+                <div class="col-lg-4 col-md-4 col-sm-6 ">
                     <div class="single-about-content ">
                         <div class="icon round-border tran3s ">
                             <i class="fa fa-database " aria-hidden="true"></i>
@@ -302,7 +303,7 @@
                             <h3>Github</h3>
                         </li>
                         <li>
-                            <a target="_blank" href="https://www.facebook.com/henriquearcangel">
+                            <a target="_blank" href="https://www.facebook.com/henryyssn">
                                 <div class="icon tran3s round-border p-color-bg"><i class="fa fa-facebook"
                                         aria-hidden="true"></i></div>
                             </a>
@@ -382,18 +383,19 @@
 
 
 <!-- Gallery -->
-<div class="row">
+<div class="row galeria">
   <div class="col-lg-4 col-md-12 mb-4 mb-lg-0">
     <img
       src="images/portfolio/logos/logoAVA4.jpg"
       class="w-100 img-fluid shadow-1-strong rounded mb-4"
-      alt="Boat on Calm Water"
+      alt="logoAVA"
+      id="logoAVA"
     />
 
     <img
       src="images/portfolio/Cards/psicologaCard/psico1.png"
       class="w-100 img-fluid shadow-1-strong rounded mb-4"
-      alt="Wintry Mountain Landscape"
+      alt="psico1"
     />
   </div>
 
@@ -402,13 +404,15 @@
       src="images/portfolio/Cards/psicologaCard/psico2.png"
       class="w-100 img-fluid shadow-1-strong rounded mb-4"
       style="height:60.8%"
-      alt="Mountains in the Clouds"
+      alt="psico2"
+      id="psico2"
     />
 
     <img
       src="images/portfolio/Cards/icarusCard/icarus2.png"
       class="w-100 img-fluid shadow-1-strong rounded mb-4"
-      alt="Boat on Calm Water"
+      alt="icarus2"
+      id="icarus2"
     />
   </div>
 
@@ -417,13 +421,16 @@
       src="images/portfolio/Cards/icarusCard/icarus1.png"
       style="height:60%"
       class="w-100 img-fluid shadow-1-strong rounded mb-4"
-      alt="Waves at Sea"
+      alt="icarus1"
+      id="icarus1"
     />
 
     <img
       src="images/portfolio/website2.png"
       class="w-100 img-fluid shadow-1-strong rounded mb-4"
-      alt="Yosemite National Park"
+      alt="website2"
+            id="website2"
+
     />
   </div>
    
@@ -432,13 +439,16 @@
       src="images/portfolio/confeitaria1.png"
       style="height:30%;"
       class="w-100 img-fluid shadow-1-strong rounded mb-4"
-      alt="Waves at Sea"
+      alt="confeitaria1"
+            id="confeitaria1"
+
     />
 
     <img
       src="images/portfolio/confeitaria3.png"
       class="w-100 img-fluid shadow-1-strong rounded mb-4"
-      alt="Yosemite National Park"
+      alt="confeitaria3"
+      id="confeitaria3"
     />
 
   </div>
@@ -447,13 +457,15 @@
       src="images/portfolio/logos/logo.png"
       style="height:50%;margin-top:-10vh"
       class="w-100 img-fluid shadow-1-strong rounded mb-4"
-      alt="Waves at Sea"
+      alt="logocosmeticos"
+      id="logocosmeticos"
     />
 
     <img
       src="images/portfolio/sistemas/GreenWaste4.png"
       class="w-100 img-fluid shadow-1-strong rounded mb-4"
-      alt="Yosemite National Park"
+      alt="greenwaste4"
+      id="greenwaste4"
     />
   </div>
    
@@ -462,13 +474,15 @@
     <img
       src="images/portfolio/hadesign.png"
       class="w-100 img-fluid shadow-1-strong rounded mb-4"
-      alt="Boat on Calm Water"
+      alt="hadesign"
+      id="hadesign"
     />
 
     <img
       src="images/portfolio/nature2.png"
       class="w-100 img-fluid shadow-1-strong rounded mb-4"
-      alt="Wintry Mountain Landscape"
+      alt="nature2"
+      id="nature2"
     />
   </div>
 
@@ -483,6 +497,8 @@
                 <h2>Modelos de websites</h2>
                 <p></p>
             </div>
+
+            <br><br>
     <!-- Carousel wrapper -->
 <div
   id="carouselVideoExample"

@@ -75,6 +75,8 @@
 
 /*(min-width: 992px) and (max-width: 1199px)*/
 
+
+
 @media (min-width: 768px) and (max-width: 991px) {
   .theme-main-header .logo {
     width: 22%;
@@ -111,6 +113,51 @@
 
 @media (max-width: 767px) {
 
+  #contato .contact-address-content{
+    display:block !important;
+  }
+.right-side{
+  margin: 10vh 0 10vh 1.75vw !important;
+}
+#website2{
+  margin-top:1vh;
+}
+#icarus1 {
+  margin-top:7vh;
+}
+#confeitaria1{
+  height:60%;
+  margin-top:8vh
+}
+
+#logocosmeticos{
+  height: 120% !important;
+  margin-top:-26vh !important;
+}
+#hadesign {
+  margin-top:-0.5vh !important;
+}
+
+
+
+.galeria {
+  margin-left: 11vw !important;
+}
+
+.carousel-indicators {
+  margin-bottom: 27.5vh  !important;
+}
+.carousel-indicators [data-mdb-target] {
+  background-color: black !important;
+}
+.rowservicos {
+  margin-left: 14vw  !important;
+}
+  .navbar-header{
+    margin-left: 70%;
+    margin-top: -3%;
+  }
+
   .scroll-top {
     bottom: 10px;
     right: 5px;
@@ -134,10 +181,11 @@
     overflow-y: auto;
   }
   .theme-main-menu .navbar-collapse {
-    padding: 0 15px;
+    margin-top:2vh !important;
+    padding: 5vh 5vh;
     box-shadow: none;
     border: none;
-    background: #1e1e1e;
+    background: #00000055;
     margin-top: 15px;
   }
   .theme-main-header li.dropdown-holder .fa {
