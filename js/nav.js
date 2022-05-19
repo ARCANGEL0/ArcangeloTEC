@@ -21,18 +21,18 @@ $("#mandaremail").on('submit', (e) => {
     Email.send({
       SecureToken: "74d83c5b-691d-4972-8309-a773d45fbd16",
       To: 'henrique@arcangelo.dev',
-      From: 'henrique@arcangelo.dev',
+      From: 'ryuusakis@gmail.com',
       Subject: $("#assunto_form").val(),
       Body: body
     }).then(
-      (s) => {
-          if(s == 'OK'){
+      (message) => {
+          if(message == 'OK'){
           toastr.success('Email enviado!', 'Sucesso!');
          console.log(s);
        }
           else {
            toastr.error('Houve algum erro ao enviar o email.', 'Ops!');
-           console.log(e);         
+           console.log(message);         
             }
       }
     );
