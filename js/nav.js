@@ -15,6 +15,8 @@ window.location.href = 'https://arcangelo.dev'
 
 $("#mandaremail").on('submit', (e) => {
 
+  e.preventDefault();
+
 
   body = "<h2><strong>Contato enviado do formulário do site:</strong></h2><br><br>" + "Nome: " + $("#nome_form").val() + " <br><br>" + "Email:  " + $("#email_form").val() + '<br><br><br><br>___________________<br><br><br>' + $("#mensagem_form").val(),
 
