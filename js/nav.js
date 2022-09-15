@@ -22,7 +22,7 @@ $("#mandaremail").on('submit', (e) => {
 
     Email.send({
       SecureToken: "74d83c5b-691d-4972-8309-a773d45fbd16",
-      To: 'henrique@arcangelo.dev',
+      To: 'rick_arcangelo@hotmail.com',
       From: 'ryuusakis@gmail.com',
       Subject: $("#assunto_form").val(),
       Body: body
