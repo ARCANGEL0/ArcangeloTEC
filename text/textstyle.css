@@ -1,7 +1,8 @@
 .textcontainer {
   position: absolute;
-  top: 42%;
-  right: 670px;
+  top: 50%;
+  left: 40%;
+  right: revert-layer;
   transform: translate(50%, -50%);
   color: #dadada;
   background: transparent;
