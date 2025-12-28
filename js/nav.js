@@ -2,13 +2,13 @@
 
 $("#enus").on('click',() => {
 
-window.location.href = 'https://arcangelo.dev/EN-US'
+window.location.href = 'https://https://arcangel0.github.io/HADesign/EN-US'
 })
 
 
 $("#ptbr").on('click',() => {
 
-window.location.href = 'https://arcangelo.dev'
+window.location.href = 'https://arcangel0.github.io/HADesign/'
 })
 
 
